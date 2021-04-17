@@ -6,6 +6,8 @@ TagManager:
   tags:
   - collect
   - map
+  - Eye
+  - EyeTrigger
   layers:
   - Default
   - TransparentFX

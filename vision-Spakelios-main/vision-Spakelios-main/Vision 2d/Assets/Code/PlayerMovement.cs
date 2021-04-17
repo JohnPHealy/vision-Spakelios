@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
-        targetPosition = new Vector2(0.0f, 0.0f);
+       // targetPosition = new Vector2(0.0f, 0.0f);
     }
     
     void Update()

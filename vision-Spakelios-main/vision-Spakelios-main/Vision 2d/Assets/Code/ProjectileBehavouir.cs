@@ -5,15 +5,20 @@ using UnityEngine;
 
 public class ProjectileBehavouir : MonoBehaviour
 {
-    public float speed = 4.5f;
+    public float speed = 4;
 
     public void Update()
     {
-        transform.position += -transform.right * Time.deltaTime * speed;
+        transform.position += transform.right * (Time.deltaTime * speed);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+       var enemy = collision.collider.GetComponent<EnemyBehavouir>();
+       if (enemy)
+       {
+           enemy.TakeHit(1);
+       } 
+       Destroy(gameObject);
     }
 }

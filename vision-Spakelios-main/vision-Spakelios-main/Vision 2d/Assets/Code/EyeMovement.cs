@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EyeMovement : MonoBehaviour
 {
     // Start is called before the first frame update
    
@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         
-        targetPosition = new Vector2(10f, 10f);
+        targetPosition = new Vector2(5f, 5f);
     }
 
     // Update is called once per frame
@@ -25,5 +25,13 @@ public class EnemyMovement : MonoBehaviour
         this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
            
        
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Eye")) 
+        {
+            gameObject.GetComponent<Animator>().Play("Eye fixed");
+        }
     }
 }

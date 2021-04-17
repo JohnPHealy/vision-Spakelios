@@ -21,7 +21,6 @@ public class EnemyBehavouir : MonoBehaviour
         Hitpoints -= damage;
         Healthbar.SetHealth(Hitpoints, MaxHitpoints);
 
-
         if (Hitpoints <= 0)
         {
             Destroy(gameObject);
