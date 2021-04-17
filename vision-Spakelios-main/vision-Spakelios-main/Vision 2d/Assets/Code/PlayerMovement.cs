@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public ProjectileBehavouir ProjectilePrefab;
+    public Transform launchOffset;
    
     public float speed;
     private Vector2 targetPosition;
@@ -14,8 +16,7 @@ public class PlayerMovement : MonoBehaviour
         
         targetPosition = new Vector2(0.0f, 0.0f);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,8 +25,12 @@ public class PlayerMovement : MonoBehaviour
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
         this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-           
-       
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(ProjectilePrefab, launchOffset.position, transform.rotation);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
