@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a37ed67721e154abb71104d51484d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound: {fileID: 8300000, guid: a4bb641bb2a8d334eaacb416ecd9df46, type: 3}
+  audio: {fileID: 0}
   ProjectilePrefab: {fileID: 6586201993471830517, guid: 5c26462664db5034e93ce8b9e6c3bbf9, type: 3}
   launchOffset: {fileID: 8040088927199175136}
   speed: 10

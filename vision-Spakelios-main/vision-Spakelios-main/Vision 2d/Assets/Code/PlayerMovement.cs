@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
-
+    public AudioClip pickupSound;
+    public AudioSource audio;
     public ProjectileBehavouir ProjectilePrefab;
     public Transform launchOffset;
    
@@ -13,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 targetPosition;
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
        // targetPosition = new Vector2(0.0f, 0.0f);
     }
     
@@ -35,9 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("collect")) 
+        if (other.gameObject.CompareTag("collect"))
         {
+            AudioSource.PlayClipAtPoint(pickupSound,transform.position);
             Destroy(other.gameObject);
         }
     }
 }
+
