@@ -8,6 +8,7 @@ TagManager:
   - map
   - Eye
   - EyeTrigger
+  - Enemy
   layers:
   - Default
   - TransparentFX

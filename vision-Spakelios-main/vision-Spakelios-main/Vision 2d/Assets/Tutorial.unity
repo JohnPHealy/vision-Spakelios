@@ -17521,6 +17521,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Companion
       objectReference: {fileID: 0}
+    - target: {fileID: 6828005475549074810, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1166942989
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828005475549074810, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6828005475549074811, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.44
@@ -17565,6 +17573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8069130642240467420, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
 --- !u!1001 &8723974113036014862
@@ -17581,6 +17593,14 @@ PrefabInstance:
     - target: {fileID: 5403070673236098992, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
       propertyPath: m_Radius
       value: 0.26046547
+      objectReference: {fileID: 0}
+    - target: {fileID: 5403070673236098992, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5403070673236098992, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8723974113081987684, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
       propertyPath: pickupSound

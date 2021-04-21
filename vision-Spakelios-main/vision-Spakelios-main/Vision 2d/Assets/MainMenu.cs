@@ -9,4 +9,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("quit");
+        Application.Quit();
+    }
+    public void Options()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
