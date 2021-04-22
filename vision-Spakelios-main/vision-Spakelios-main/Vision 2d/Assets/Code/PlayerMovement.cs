@@ -7,7 +7,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public AudioClip pickupSound;
-    public AudioSource audio;
     public ProjectileBehavouir ProjectilePrefab;
     public Transform launchOffset;
    
@@ -15,8 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 targetPosition;
     void Start()
     {
-        audio = GetComponent<AudioSource>();
-       // targetPosition = new Vector2(0.0f, 0.0f);
+        // targetPosition = new Vector2(0.0f, 0.0f);
     }
     
     void Update()

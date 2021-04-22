@@ -17517,6 +17517,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6828005475549074788, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6828005475549074791, guid: 4c1c6140583b35d4dae1a675fa55f1dd, type: 3}
       propertyPath: m_Name
       value: Companion
@@ -17600,7 +17604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5403070673236098992, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8723974113081987684, guid: 915c8ed823884a248a27ee75e6c34cbf, type: 3}
       propertyPath: pickupSound

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/options.unity
     guid: 24f5afcb05c17ac4e8af64e9bedbf02f
+  - enabled: 1
+    path: Assets/end screen.unity
+    guid: e8238e99db33ea14c979e7e2de8b6344
   m_configObjects: {}
