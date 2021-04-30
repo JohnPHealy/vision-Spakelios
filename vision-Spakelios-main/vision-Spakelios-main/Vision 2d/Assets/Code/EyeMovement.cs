@@ -38,5 +38,8 @@ public class EyeMovement : MonoBehaviour
             gameObject.GetComponent<Animator>().Play("Eye fixed");
         }
     }
-    
 }
+
+
+
+

@@ -9,14 +9,15 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip pickupSound;
     public ProjectileBehavouir ProjectilePrefab;
     public Transform launchOffset;
-   
+
     public float speed;
     private Vector2 targetPosition;
+
     void Start()
     {
         // targetPosition = new Vector2(0.0f, 0.0f);
     }
-    
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
             targetPosition = Input.mousePosition;
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
+
         this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -37,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("collect"))
         {
-            AudioSource.PlayClipAtPoint(pickupSound,transform.position);
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
             Destroy(other.gameObject);
         }
     }

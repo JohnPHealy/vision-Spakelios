@@ -175,6 +175,23 @@ CircleCollider2D:
   m_Offset: {x: 0.031692587, y: -0.07797863}
   serializedVersion: 2
   m_Radius: 0.20645268
+--- !u!1 &144528236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8574159214774958039, guid: f44df799b4a85d74b9016845bfe43d35, type: 3}
+  m_PrefabInstance: {fileID: 572160383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &144528237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144528236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa09a52a08dc29545b388efe57e31c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &256847566
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +203,7 @@ GameObject:
   - component: {fileID: 256847569}
   - component: {fileID: 256847568}
   - component: {fileID: 256847567}
+  - component: {fileID: 256847570}
   m_Layer: 0
   m_Name: Level Transition (1)
   m_TagString: Untagged
@@ -245,6 +263,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256847570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256847566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740df8d351bb8354eb14299ffca0420c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 402663421}
 --- !u!1 &359108545
 GameObject:
   m_ObjectHideFlags: 0
